@@ -3,7 +3,9 @@ include type
 
 declare f: type.Map (domain: set.Real, codomain: set.Real)
 
-@func(f)[x]:: {} -- TODO
+@func(f)[x]:: {
+    -- TODO
+} ;;
 
 @mod(main):: {
     -- TODO
