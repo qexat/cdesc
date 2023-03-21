@@ -1,0 +1,17 @@
+@rule(NO_EXC):: __homoiconicity__ ;;
+
+include config
+declare cdesc: auto
+
+@mod(cdesc):: {
+    new project = config.Project (git: true)
+
+    @closure(project):: {
+        .name = "cdesc"
+        .version = "0.1.0"
+        .author = "qexat"
+        .repository_path = "https://github.com/qexat/cdesc.git"
+    } ;;
+} ;;
+
+ship cdesc
